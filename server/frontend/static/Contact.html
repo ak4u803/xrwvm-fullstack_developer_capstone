@@ -1,0 +1,208 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .banner {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .banner p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .card {
+      margin: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #2a5298;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+    .contact-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+    .contact-card h3 {
+      color: #2a5298;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    .contact-card p {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+    }
+    .contact-card i {
+      margin-right: 10px;
+      color: #2a5298;
+      width: 20px;
+      text-align: center;
+    }
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .hours-table th, .hours-table td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .hours-table th {
+      font-weight: 600;
+      color: #2a5298;
+    }
+    .form-control {
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      width: 100%;
+    }
+    .btn-primary {
+      background-color: #2a5298;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .btn-primary:hover {
+      background-color: #1e3c72;
+    }
+    .social-links {
+      margin-top: 2rem;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #f8f9fa;
+      border-radius: 5px;
+      color: #2a5298;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .social-links a:hover {
+      background: #2a5298;
+      color: white;
+    }
+  </style>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%;">
+    <div class="banner" name="contact-header">
+      <h1>Contact Us</h1>
+      <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+    </div>
+    
+    <div class="contact-info">
+      <div class="contact-card">
+        <h3>Contact Information</h3>
+        <p><i>📞</i> +1 (555) 123-4567</p>
+        <p><i>📧</i> info@dealerships.com</p>
+        <p><i>📍</i> 123 Auto Mall Drive</p>
+        <p><i>🏙️</i> New York, NY 10001</p>
+        
+        <h3 style="margin-top: 2rem;">Business Hours</h3>
+        <table class="hours-table">
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>9:00 AM - 8:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>9:00 AM - 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>11:00 AM - 5:00 PM</td>
+          </tr>
+        </table>
+        
+        <div class="social-links">
+          <h3>Connect With Us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      
+      <div class="contact-card">
+        <h3>Send Us a Message</h3>
+        <form>
+          <input type="text" class="form-control" placeholder="Your Name" required>
+          <input type="email" class="form-control" placeholder="Your Email" required>
+          <input type="text" class="form-control" placeholder="Subject">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
