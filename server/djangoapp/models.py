@@ -36,3 +36,33 @@ class CarModel(models.Model):
     
     def __str__(self):
         return f"{self.car_make.name} {self.name} ({self.year})"
+
+
+class CarDealer(models.Model):
+    address = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=100)
+    id = models.IntegerField(primary_key=True)
+    lat = models.FloatField()
+    long = models.FloatField()
+    short_name = models.CharField(max_length=100)
+    st = models.CharField(max_length=100)
+    zip = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return f"{self.full_name} - {self.city}, {self.st}"
+
+
+class DealerReview(models.Model):
+    dealership = models.IntegerField()
+    name = models.CharField(max_length=100)
+    purchase = models.BooleanField()
+    purchase_date = models.DateField()
+    car_make = models.CharField(max_length=100)
+    car_model = models.CharField(max_length=100)
+    car_year = models.IntegerField()
+    sentiment = models.CharField(max_length=100)
+    review = models.TextField()
+    
+    def __str__(self):
+        return f"Review by {self.name} for {self.car_year} {self.car_make} {self.car_model}"
